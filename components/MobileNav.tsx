@@ -26,20 +26,20 @@ const MobileNav = () => {
       >
         <SheetHeader>
           <Link href="/" className="flex items-center gap-2 max-sm-gap-1">
-            <Image src="/data/job.jpg" width={30} height={32} alt="logo" />
-            <h1 className="font-semibold text-xl text-primary">Your Job</h1>
+          <Image src="/images/logo.png" width={133} height={50} alt="logo" />
+        <h1 className="font-semibold text-xl ">Auto na Teraz</h1>
           </Link>
         </SheetHeader>
         <SheetClose asChild>
           <div className="flex h-full flex-col gap-6 pt-8 ">
             <SheetClose asChild>
               <Link
-                href="/add-job"
+                href="/garage"
                 className={`flex items-center gap-4 hover:bg-primary hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition ${
-                  pathname === '/add-job' ? 'active ' : 'px-4'
+                  pathname === '/garage' ? 'active ' : 'px-4'
                 }`}
               >
-                Post a job
+                Nasz Garaż
               </Link>
             </SheetClose>
           </div>
