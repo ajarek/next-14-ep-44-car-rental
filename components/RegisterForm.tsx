@@ -43,7 +43,7 @@ const RegisterForm = () => {
       <div className='flex justify-center p-2'>
         <Link href='/'>
           <Image
-            src='/images/store.svg'
+            src='/images/logo.png'
             alt='logo'
             width={60}
             height={60}

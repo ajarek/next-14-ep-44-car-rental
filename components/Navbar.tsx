@@ -10,12 +10,12 @@ const Navbar = async () => {
   const { user } = (session as any) || {}
   return (
     <div className="h-16 w-full  flex justify-between items-center gap-4  px-8 max-sm:px-2 border-b  ">
-      <div className="w-full flex ">
+      <div className="w-full flex items-center gap-2 ">
         <Links />
         {user?.admin && (
           <Link
             href='/dashboard'
-            className={`flex items-center justify-start gap-4 hover:bg-primary hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition`}
+            className={`flex items-center gap-4 hover:bg-primary hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition`}
           >
             Dashboard
           </Link>
