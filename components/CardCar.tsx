@@ -17,30 +17,27 @@ type PropsCar={
 }
 const CardCar = ({brand, type, price, persons, gears, image}:PropsCar) => {
   return (
-    <>
-     <div>
-       
-      </div>
-    <Card  className="relative w-[300px]  h-[400px]  shadow-lg rounded-lg " >
+  
+    <Card  className=" w-full  h-[400px]  shadow-lg rounded-lg border-2 border-red-500" >
     
     <CardHeader>
       <CardTitle>{brand}</CardTitle>
       <CardDescription className='flex  items-center gap-3'><span>{type}</span><span>{persons}</span><span>{gears}</span></CardDescription>
     </CardHeader>
-    <CardContent>
+    <CardContent className='   '>
     <Image
           alt={'title'}
           src={image}
-          width="200"
+          width="400"
           height="200"
-          className="w-full  object-cover  "
+          className=" w-full  h-full  object-cover  rounded-lg p-4 "
         />
     </CardContent>
     <CardFooter>
       <p>{price}</p>
     </CardFooter>
   </Card>
-  </>
+  
   )
 }
 
