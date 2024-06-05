@@ -7,6 +7,7 @@ import {
     CardTitle,
   } from '@/components/ui/card'
   import Image from 'next/image'
+import Link from 'next/link'
 type PropsCar={
   brand:string
   type:string
@@ -18,11 +19,11 @@ type PropsCar={
 const CardCar = ({brand, type, price, persons, gears, image}:PropsCar) => {
   return (
   
-    <Card  className=" w-full  h-[400px]  shadow-lg rounded-lg border-2 border-red-500" >
-    
+    <Card  className=" w-full  h-auto  shadow-xl rounded-lg border-2  bg-gradient-to-r from-blue-500 to-blue-600" >
+    <Link href={`/cars/${brand}`}>
     <CardHeader>
       <CardTitle>{brand}</CardTitle>
-      <CardDescription className='flex  items-center gap-3'><span>{type}</span><span>{persons}</span><span>{gears}</span></CardDescription>
+      <CardDescription className='flex  items-center gap-3 text-primary'><span>{type}</span><span>{persons}</span><span>{gears}</span></CardDescription>
     </CardHeader>
     <CardContent className='   '>
     <Image
@@ -34,8 +35,9 @@ const CardCar = ({brand, type, price, persons, gears, image}:PropsCar) => {
         />
     </CardContent>
     <CardFooter>
-      <p>{price}</p>
+      <p className='text-xl font-semibold'>{price.toFixed(2)} PLN</p>
     </CardFooter>
+    </Link>
   </Card>
   
   )
