@@ -11,9 +11,22 @@ import { Label } from './ui/label'
 import DatePickerWithRange from '@/components/DatePickerWithRange'
 import { Button } from './ui/button'
 import { useRouter } from 'next/navigation'
+import { ToastAction } from '@/components/ui/toast'
+import { useToast } from '@/components/ui/use-toast'
+
 const Modal = () => {
   const router = useRouter()
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:4085627495.
+  const { toast } = useToast()
+  
+  const toastAlert = () => {
+    toast({
+      variant: 'destructive',
+      title: 'Oj! Coś poszło nie tak.',
+      description: 'Proszę poprawnie wypełnić wszystkie pola!',
+      action: <ToastAction altText='Try again'>Spróbuj ponownie</ToastAction>,
+    })
+  }
+    
   const handleSubmit = (e: any) => {
     e.preventDefault()
     const today = new Date()
@@ -25,22 +38,25 @@ const Modal = () => {
     if (
       todayDate >= 0 &&
       period > 0 &&
-      e.target[2].innerText !== 'Check in date' &&
-      e.target[3].innerText !== 'Check out date' &&
-      e.target[1].value 
+      e.target[2].innerText !== 'Pick a date' &&
+      e.target[3].innerText !== 'Pick a date' &&
+      e.target[1].value
     ) {
       router.push(
         `/garage/?firstDate=${e.target[2].innerText}&secondaryDate=${e.target[3].innerText}&city=${e.target[1].value}`
       )
+    } else {
+      
+      toastAlert()
+    }
   }
-}
   return (
     <div className="fixed top-20 w-3/4   flex  flex-col items-center justify-center gap-4 border-2 border-blue-900 p-4 rounded-lg">
       <h1 className=" w-full text-xl text-left ">Wynajmij samochód</h1>
       <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
         <div className="w-full flex flex-col gap-4">
           <Label htmlFor="city">Odbiór i zwrot</Label>
-          <Select defaultValue="" name="city">
+          <Select defaultValue="" name="city " required>
             <SelectTrigger className="">
               <SelectValue
                 placeholder="Wybierz Miejscowość"
@@ -69,7 +85,6 @@ const Modal = () => {
             <DatePickerWithRange />
           </div>
           <div className="flex flex-col mt-5 ">
-
             <Button className=" ">Wybierz Samochód</Button>
           </div>
         </div>
