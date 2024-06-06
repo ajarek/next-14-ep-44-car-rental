@@ -32,7 +32,7 @@ const MobileNav = () => {
         </SheetHeader>
         <SheetClose asChild>
           <div className="flex h-full flex-col gap-6 pt-8 ">
-            <SheetClose asChild>
+            {/* <SheetClose asChild>
               <Link
                 href="/garage"
                 className={`flex items-center gap-4 hover:bg-primary hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition ${
@@ -41,7 +41,7 @@ const MobileNav = () => {
               >
                 Nasz Garaż
               </Link>
-            </SheetClose>
+            </SheetClose> */}
           </div>
         </SheetClose>
       </SheetContent>

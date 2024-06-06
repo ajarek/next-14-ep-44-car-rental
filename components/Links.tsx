@@ -13,14 +13,14 @@ const Links = () => {
         <h1 className="font-semibold text-xl ">Auto na Teraz</h1>
       </Link>
 
-      <Link
+      {/* <Link
         href="/garage"
         className={`flex items-center gap-4 hover:bg-primary hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition ${
           pathname === '/garage' ? 'active ' : 'px-4'
         }`}
       >
         Nasz Garaż
-      </Link>
+      </Link> */}
     </div>
   )
 }
