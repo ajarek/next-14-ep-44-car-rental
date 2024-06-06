@@ -13,6 +13,7 @@ import { Button } from './ui/button'
 import { useRouter } from 'next/navigation'
 import { ToastAction } from '@/components/ui/toast'
 import { useToast } from '@/components/ui/use-toast'
+import { MapPin, CarFront } from 'lucide-react'
 
 const Modal = () => {
   const router = useRouter()
@@ -50,17 +51,22 @@ const Modal = () => {
       toastAlert()
     }
   }
+  
   return (
-    <div className="fixed top-20 w-3/4   flex  flex-col items-center justify-center gap-4 border-2 border-blue-900 p-4 rounded-lg">
-      <h1 className=" w-full text-xl text-left ">Wynajmij samochód</h1>
+    <div className="fixed top-52 w-3/4   flex  flex-col items-center justify-center gap-4 border-2 border-blue-900 p-8 rounded-xl bg-primary-foreground">
+      <h1 className=" w-full text-xl flex items-center gap-2 justify-start "><CarFront/>Wynajmij samochód </h1>
       <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
         <div className="w-full flex flex-col gap-4">
-          <Label htmlFor="city">Odbiór i zwrot</Label>
+          <Label htmlFor="city" className='flex items-center gap-2'>Odbiór i zwrot</Label>
           <Select defaultValue="" name="city " required>
             <SelectTrigger className="">
               <SelectValue
-                placeholder="Wybierz Miejscowość"
-                className="text-red-500"
+                placeholder={<div className='flex items-center gap-2'>
+                  <MapPin />
+                  <span className='text-gray-400'>Wybierz Miasto</span>
+                  
+                  </div>}
+                
               />
             </SelectTrigger>
             <SelectContent>
