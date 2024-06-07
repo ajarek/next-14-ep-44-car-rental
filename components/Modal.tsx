@@ -53,8 +53,8 @@ const Modal = () => {
   }
   
   return (
-    <div className="fixed top-52 w-3/4   flex  flex-col items-center justify-center gap-4 border-2 border-blue-900 p-8 rounded-xl bg-primary-foreground">
-      <h1 className=" w-full text-xl flex items-center gap-2 justify-start "><CarFront/>Wynajmij samochód </h1>
+    <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-3/4   flex  flex-col items-center justify-center gap-4 border-2 border-blue-900 p-8 rounded-xl bg-primary-foreground">
+      <h1 className=" w-full text-xl flex items-center gap-2 justify-start "><CarFront color='#2563eb'/>Wynajmij samochód </h1>
       <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
         <div className="w-full flex flex-col gap-4">
           <Label htmlFor="city" className='flex items-center gap-2'>Odbiór i zwrot</Label>
@@ -62,7 +62,7 @@ const Modal = () => {
             <SelectTrigger className="">
               <SelectValue
                 placeholder={<div className='flex items-center gap-2'>
-                  <MapPin />
+                  <MapPin color='#2563eb' />
                   <span className='text-gray-400'>Wybierz Miasto</span>
                   
                   </div>}
