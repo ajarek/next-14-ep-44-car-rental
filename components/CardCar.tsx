@@ -33,7 +33,7 @@ const CardCar = ({
   city,
 }: PropsCar) => {
   return (
-    <Card className=" w-full  h-auto  shadow-xl rounded-xl border-2  bg-gradient-to-r from-blue-500 to-blue-600">
+    <Card className=" w-full  h-auto  shadow-xl rounded-xl border-2 border-primary">
       <Link
         href={`/car/?firstDate=${firstDate}&secondaryDate=${secondaryDate}&city=${city}&price=${price}&brand=${brand}&type=${type}&persons=${persons}&gears=${gears}&image=${image}`}
       >
@@ -59,9 +59,9 @@ const CardCar = ({
           <Image
             alt={'title'}
             src={image}
-            width="400"
-            height="200"
-            className=" w-full  h-full  object-cover  rounded-lg p-4 "
+            width="316"
+            height="211"
+            className=" w-full  h-full  object-cover  rounded-lg "
           />
         </CardContent>
         <CardFooter>

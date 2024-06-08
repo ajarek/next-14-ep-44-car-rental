@@ -64,5 +64,8 @@
     .h2{
       @apply text-2xl font-semibold
     }
+    .p{
+      @apply text-gray-500
+    }
   }
   
