@@ -1,4 +1,6 @@
 import PaymentForm from '@/components/FormPayment'
+import { auth } from '@/app/api/auth/auth'
+import { redirect } from 'next/navigation'
 
 const Payment = async ({
   searchParams,
@@ -6,9 +8,14 @@ const Payment = async ({
   searchParams: { total: number }
 }) => {
   const { total } = searchParams
+  const session = await auth()
+  const { user } = (session as any) || {}
 
+  if (!user) {
+    redirect('/register')
+  }
   return (
-    <>
+    <> 
       <PaymentForm total={total} />
     </>
   )

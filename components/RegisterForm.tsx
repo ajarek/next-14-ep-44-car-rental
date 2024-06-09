@@ -47,7 +47,7 @@ const RegisterForm = () => {
             alt='logo'
             width={60}
             height={60}
-            className='w-[40px] h-[40px] '
+            className='w-full h-full object-cover '
           />
         </Link>
       </div>
@@ -57,7 +57,7 @@ const RegisterForm = () => {
       >
         <Input
           type='text'
-          placeholder='username'
+          placeholder='imię i nazwisko'
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
@@ -69,13 +69,13 @@ const RegisterForm = () => {
         />
         <Input
           type='password'
-          placeholder='password'
+          placeholder='hasło'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <Input
           type='text'
-          placeholder='image'
+          placeholder='twoje zdjęcie'
           value={img}
           onChange={(e) => setImage(e.target.value)}
         />
@@ -88,13 +88,13 @@ const RegisterForm = () => {
           className='bg-[#0E78F9] hover:bg-[#0E78F9]/90'
           type='submit'
         >
-          Register
+          Rejestracja
         </Button>
         <Link
           href='/api/auth/signin'
           className='text-white'
         >
-          Have an account? <b className='text-[#0E78F9]'>Login</b>
+          Masz już konto? <b className='text-[#0E78F9]'>Logowanie</b>
         </Link>
       </form>
     </div>

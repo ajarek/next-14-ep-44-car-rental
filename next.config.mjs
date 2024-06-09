@@ -8,6 +8,19 @@ const nextConfig = {
             port: '',
            
           },
+          {
+            protocol: 'https',
+            hostname:"randomuser.me",
+            port: '',
+           
+          },
+
+          {
+            protocol: 'https',
+            hostname:"img.myloview.com",
+            port: '',
+           
+          },
         ],
       },
 };
