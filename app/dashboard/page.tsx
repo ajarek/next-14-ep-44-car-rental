@@ -13,6 +13,8 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import  DeleteUser  from '@/components/DeleteUser'
+import { deleteUser } from '@/lib/action'
 
 
 const Dashboard = async () => {
@@ -63,7 +65,9 @@ const Dashboard = async () => {
                🖊️
               </Link>
              
-            </TableCell>
+                <DeleteUser _id={(user._id).toString()} deleteItem={deleteUser}  />
+              </TableCell>
+           
           </TableRow>
         ))}
       </TableBody>
