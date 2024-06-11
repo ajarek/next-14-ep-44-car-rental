@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { User } from '@/lib/models'
+import { User, UserWithoutId } from '@/lib/models'
 import { addUser } from '@/lib/action'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
@@ -22,7 +22,7 @@ const RegisterForm = () => {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault()
-    const formData: User = {
+    const formData: UserWithoutId = {
       username,
       email,
       password,

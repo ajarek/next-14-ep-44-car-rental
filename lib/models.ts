@@ -8,6 +8,7 @@ export type User = {
   img: string
   isAdmin: boolean
 }
+export type UserWithoutId = Omit<User, '_id'>
 
 const userSchema = new mongoose.Schema(
   {
