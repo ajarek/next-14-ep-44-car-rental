@@ -1,14 +1,11 @@
 'use client'
-
+type PropsDeleteUser={
+  _id:string | number
+  deleteItem:Function
+}
 import { Button } from '@/components/ui/button'
 
-const DeleteUser = ({
-  _id,
-  deleteItem,
-}: {
-  _id: string
-  deleteItem: Function
-}) => {
+const DeleteUser = ({  _id,  deleteItem,}: PropsDeleteUser) => {
   return (
     <>
       <form

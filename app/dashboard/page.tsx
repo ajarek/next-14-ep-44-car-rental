@@ -67,7 +67,7 @@ const Dashboard = async () => {
                   🖊️
                 </Link>
 
-                <DeleteUser _id={user._id.toString()} deleteItem={deleteUser} />
+                <DeleteUser _id={user._id} deleteItem={deleteUser} />
               </TableCell>
             </TableRow>
           ))}
