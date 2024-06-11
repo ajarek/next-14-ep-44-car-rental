@@ -1,92 +1,92 @@
 [
-    {
-        "id": 1,
-        "brand": "Fiat 500",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/fiat-500-2d-weiss-2020.png",
-        "type": "Sedan",
-        "persons": "4",
-        "gears": "Manual",
-        "price": 223
-    },
-    {
-        "id": 2,
-        "brand": "Citroen C3",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/citroen-c3-5d-blue-2022.png",
-        "type": "Sedan",
-        "persons": "5",
-        "gears": "Manual",
-        "price": 257
-    },
-    {
-        "id": 3,
-        "brand": "Hyundai i30",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/hyundai-i30-5d-silver-2023.png",
-        "type": "Sedan",
-        "persons": "5",
-        "gears": "Manual",
-        "price": 299
-    },
-    {
-        "id": 4,
-        "brand": "Mitsubishi ASX",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/mitsubishi-asx-suv-white-2021.png",
-        "type": "Sedan",
-        "persons": "5",
-        "gears": "Manual",
-        "price": 317
-    },
-    {
-        "id": 5,
-        "brand": "Hyundai i30 SW",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/hyundai-i30-stw-silver-2023.png",
-        "type": "Station wagon",
-        "persons": "5",
-        "gears": "Manual",
-        "price": 335
-    },
-    {
-        "id": 6,
-        "brand": "Kia Ceed",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/kia-ceed-5d-silver-2020.png",
-        "type": "Sedan",
-        "persons": "5",
-        "gears": "Automat",
-        "price": 342
-    },
-    {
-        "id": 7,
-        "brand": "Hyundai Elantra",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/hyundai-elantra-4d-schwarz-2017.png",
-        "type": "Sedan",
-        "persons": "5",
-        "gears": "Manual",
-        "price": 352
-    },
-    {
-        "id": 8,
-        "brand": "Peugeot 2008",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/peugeot-2008-5d-gruen-2017.png",
-        "type": "Sedan",
-        "persons": "5",
-        "gears": "Automat",
-        "price": 360
-    },
-    {
-        "id": 9,
-        "brand": "Peugeot 308 SW",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/peugeot-308-stw-white-2021.png",
-        "type": "Sedan",
-        "persons": "2",
-        "gears": "Automat",
-        "price": 365
-    },
-    {
-        "id": 10,
-        "brand": "Skoda Octavia",
-        "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/skoda-octavia-stw-red-2021.png",
-        "type": "Station wagon",
-        "persons": "5",
-        "gears": "Manual",
-        "price": 395
-    }
+  {
+    "id": 1,
+    "brand": "Fiat 500",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/fiat-500-2d-weiss-2020.png",
+    "type": "Sedan",
+    "persons": "4",
+    "gears": "Manual",
+    "price": 223
+  },
+  {
+    "id": 2,
+    "brand": "Citroen C3",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/citroen-c3-5d-blue-2022.png",
+    "type": "Sedan",
+    "persons": "5",
+    "gears": "Manual",
+    "price": 257
+  },
+  {
+    "id": 3,
+    "brand": "Hyundai i30",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/hyundai-i30-5d-silver-2023.png",
+    "type": "Sedan",
+    "persons": "5",
+    "gears": "Manual",
+    "price": 299
+  },
+  {
+    "id": 4,
+    "brand": "Mitsubishi ASX",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/mitsubishi-asx-suv-white-2021.png",
+    "type": "Sedan",
+    "persons": "5",
+    "gears": "Manual",
+    "price": 317
+  },
+  {
+    "id": 5,
+    "brand": "Hyundai i30 SW",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/hyundai-i30-stw-silver-2023.png",
+    "type": "Station wagon",
+    "persons": "5",
+    "gears": "Manual",
+    "price": 335
+  },
+  {
+    "id": 6,
+    "brand": "Kia Ceed",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/kia-ceed-5d-silver-2020.png",
+    "type": "Sedan",
+    "persons": "5",
+    "gears": "Automat",
+    "price": 342
+  },
+  {
+    "id": 7,
+    "brand": "Hyundai Elantra",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/hyundai-elantra-4d-schwarz-2017.png",
+    "type": "Sedan",
+    "persons": "5",
+    "gears": "Manual",
+    "price": 352
+  },
+  {
+    "id": 8,
+    "brand": "Peugeot 2008",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/peugeot-2008-5d-gruen-2017.png",
+    "type": "Sedan",
+    "persons": "5",
+    "gears": "Automat",
+    "price": 360
+  },
+  {
+    "id": 9,
+    "brand": "Peugeot 308 SW",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/peugeot-308-stw-white-2021.png",
+    "type": "Sedan",
+    "persons": "2",
+    "gears": "Automat",
+    "price": 365
+  },
+  {
+    "id": 10,
+    "brand": "Skoda Octavia",
+    "image": "https://www.sixt.com/fileadmin2/files/global/sideview/user_upload/fleet/png/752x500/skoda-octavia-stw-red-2021.png",
+    "type": "Station wagon",
+    "persons": "5",
+    "gears": "Manual",
+    "price": 395
+  }
 ]

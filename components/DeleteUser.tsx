@@ -2,7 +2,13 @@
 
 import { Button } from '@/components/ui/button'
 
-const  DeleteUser=({ _id,  deleteItem,}: {  _id: string,  deleteItem: Function})=> {
+const DeleteUser = ({
+  _id,
+  deleteItem,
+}: {
+  _id: string
+  deleteItem: Function
+}) => {
   return (
     <>
       <form
@@ -10,16 +16,12 @@ const  DeleteUser=({ _id,  deleteItem,}: {  _id: string,  deleteItem: Function})
           const res = await deleteItem(formData)
         }}
       >
-        <input
-          type='hidden'
-          name='_id'
-          value={_id}
-        />
+        <input type="hidden" name="_id" value={_id} />
 
         <Button
-          className=' bg-transparent  rounded-sm hover:bg-transparent hover:scale-105  transition'
-          type='submit'
-          size='sm'
+          className=" bg-transparent  rounded-sm hover:bg-transparent hover:scale-105  transition"
+          type="submit"
+          size="sm"
         >
           ❌
         </Button>

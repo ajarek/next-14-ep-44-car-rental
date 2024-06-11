@@ -4,8 +4,8 @@ import { Globe, CarFront, HandHeart } from 'lucide-react'
 
 export default function Home() {
   return (
-    <main className=" flex min-h-screen flex-col items-center justify-between  pb-12">
-      <div className="relative ">
+    <main className=" flex min-h-screen flex-col items-center justify-between  pb-12 max-sm:py-24">
+      <div className="relative">
         <Image
           src="/images/baner-car.jpg"
           alt="baner car"
@@ -15,7 +15,7 @@ export default function Home() {
         <Modal />
       </div>
 
-      <div className="w-full text-center bg-primary p-8">
+      <div className="w-full text-center bg-primary p-8 max-sm:mt-24">
         <h2 className=" h2">WYNAJMIJ AUTO PREMIUM.</h2>
         <h2 className="h2">ZAPŁAĆ JAK ZA EKONOMICZNE.</h2>
         <p>
@@ -23,7 +23,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="w-full grid grid-cols-3 gap-4 px-24 py-8 max-lg:grid-cols-1">
+      <div className="w-full grid grid-cols-3 gap-4 px-24 max-sm:px-4 py-8 max-lg:grid-cols-1">
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
             <Globe color="#2563eb" />

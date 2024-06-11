@@ -9,12 +9,9 @@ import {
   SheetTrigger,
   SheetHeader,
 } from '@/components/ui/sheet'
-
-import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 
 const MobileNav = () => {
-  const pathname = usePathname()
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -26,24 +23,10 @@ const MobileNav = () => {
       >
         <SheetHeader>
           <Link href="/" className="flex items-center gap-2 max-sm-gap-1">
-          <Image src="/images/logo.png" width={133} height={50} alt="logo" />
-        <h1 className="font-semibold text-xl ">Auto na Teraz</h1>
+            <Image src="/images/logo.png" width={133} height={50} alt="logo" />
+            <h1 className="font-semibold text-xl ">Auto na Teraz</h1>
           </Link>
         </SheetHeader>
-        <SheetClose asChild>
-          <div className="flex h-full flex-col gap-6 pt-8 ">
-            {/* <SheetClose asChild>
-              <Link
-                href="/garage"
-                className={`flex items-center gap-4 hover:bg-primary hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition ${
-                  pathname === '/garage' ? 'active ' : 'px-4'
-                }`}
-              >
-                Nasz Garaż
-              </Link>
-            </SheetClose> */}
-          </div>
-        </SheetClose>
       </SheetContent>
     </Sheet>
   )

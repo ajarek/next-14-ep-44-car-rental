@@ -37,7 +37,7 @@ const CardCar = ({
       <Link
         href={`/car/?firstDate=${firstDate}&secondaryDate=${secondaryDate}&city=${city}&price=${price}&brand=${brand}&type=${type}&persons=${persons}&gears=${gears}&image=${image}`}
       >
-        <CardHeader className='flex flex-col gap-8'>
+        <CardHeader className="flex flex-col gap-8">
           <CardTitle>{brand}</CardTitle>
 
           <div className="flex  items-center gap-4 ">

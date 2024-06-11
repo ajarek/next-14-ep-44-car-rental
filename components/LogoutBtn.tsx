@@ -9,10 +9,10 @@ const LogoutBtn = () => {
   }
   return (
     <Button
-      variant='destructive'
+      variant="destructive"
       size={'sm'}
       onClick={handleLogout}
-      className='italic'
+      className="italic"
     >
       Logout
     </Button>

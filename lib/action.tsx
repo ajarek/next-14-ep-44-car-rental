@@ -67,4 +67,3 @@ export const updateUser = async (formData: FormData) => {
     redirect('/dashboard/')
   }
 }
-

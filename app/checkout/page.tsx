@@ -15,7 +15,7 @@ const Payment = async ({
     redirect('/register')
   }
   return (
-    <> 
+    <>
       <PaymentForm total={total} />
     </>
   )

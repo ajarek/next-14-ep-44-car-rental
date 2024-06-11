@@ -14,7 +14,7 @@ const Navbar = async () => {
         <Links />
         {user?.admin && (
           <Link
-            href='/dashboard'
+            href="/dashboard"
             className={`flex items-center gap-4 hover:bg-primary hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition`}
           >
             Dashboard
@@ -22,7 +22,7 @@ const Navbar = async () => {
         )}
       </div>
       <div className=" flex justify-between items-center italic gap-6  ">
-      <Logout session={session} />
+        <Logout session={session} />
         <ModeToggle />
         <div className="w-full max-w-[264px] lg:hidden">
           <MobileNav />
